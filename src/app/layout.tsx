@@ -6,8 +6,14 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: `기석's 블로그`,
+  title: {
+    default: `기석's 블로그`,
+    template: `기석's 블로그 | %s`,
+  },
   description: "기석의 Next js 연습 블로그입니다.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
